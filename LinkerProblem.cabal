@@ -10,8 +10,8 @@ cabal-version:        >=1.10
 library
   exposed-modules:      HelloWorld
   build-depends:        base >= 4.7 && < 5
-  extra-libraries:      helloWorld
   hs-source-dirs:       src
+  c-sources:            cbits/helloWorld.c
   default-language:     Haskell2010
 
 executable LinkerProblem
